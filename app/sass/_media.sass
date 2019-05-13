@@ -1,0 +1,148 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.header-list
+		a
+			font-size: 20px
+	.trains-logo
+		display: none
+	.trains-sport__subtitle-text
+		padding-bottom: 0
+	.trains-sport__subtitle-text-split
+		padding-bottom: 24px
+	.trains-sport__block
+		&-bottom
+			margin-bottom: 30px
+		&-top
+			margin-top: 30px
+// ≥992px
++media-breakpoint-down(md)
+	.header-list
+		margin: 50px auto 70px
+	.trains__button
+		width: 40%
+	.footer
+		&__item
+			margin-top: 80px
+			margin-bottom: 100px
+// ≥768px
++media-breakpoint-down(sm)
+	html
+		//font-size: 7px
+	.m-menu-link
+		display: block
+		margin-top: 30px
+		margin-bottom: 30px
+	.trains-sport 
+		.mobile-img
+			left: 50px
+	.trains-sport__block
+		&-bottom
+			&-sm
+				margin-bottom: 50px
+	.trains__button
+		width: 50%
+	.visible-xs
+		display: none
+	.menu-link
+		line-height: 10rem
+	.slider-sl		
+		.slick
+			&-dots				
+				//left: 150px
+				//right: 150px
+			&-prev:before
+				//top: 273px
+				//left: 120px
+			&-next:before
+				//top: 273px
+				//right: 120px
+// ≥576px
++media-breakpoint-down(xs)
+	.trains-sport__description
+		text-align: center
+	.trains__button
+		margin-top: 0
+		margin-bottom: 0
+		width: 250px
+	.trains-sport img
+		//width: 90%
+		//height: 90%
+	.trains-sport .mobile-img
+		//width: 60%
+		//height: 60%
+	.slider-sl
+		//width: 350px
+		img
+			//width: 55%
+		.slick
+			&-dots				
+				//left: 50px
+				//right: 50px
+				margin: 0 auto
+			&-prev:before
+				display: none
+				//top: 188px
+				//left: 100px
+			&-next:before
+				display: none
+				//top: 188px
+				//right: 100px
+	.location
+		margin-top: 100px
+		#map
+			margin-top: 30px
+			margin-bottom: 30px
+	.instagram
+		iframe
+			margin-top: 30px
+			margin-bottom: 30px
+	.location .loc__text
+		font-size: 20px
+	.instagram__text
+		font-size: 20px
+	.slider-sl__header
+		font-size: 18px
+	.slider-sl__description
+		font-size: 25px
+	.good-tennis__text
+		font-size: 20px
+	.send .send-button__button
+		margin-top: 50px
+	.footer
+		img 
+			//width: 80%
+		&__item
+			display: block
+			margin-bottom: 30px
+			margin-top: 0
+			margin-right: 0
+			&:first-child
+				margin-top: 80px
+			&:last-child
+				margin-bottom: 0px	
+		.copyrights
+			&__number
+				font-size: 28px
+				color: $white
+	#form
+		width: 100%
+// ≤576px
++media-breakpoint-up(sm)
+	.navigation-holder
+		.navigation-list
+			li
+				margin-right: 10px
+// ≤768px
++media-breakpoint-up(md)
+	.header-section
+		.logo-right
+			margin-top: 25px
+// ≤992px
++media-breakpoint-up(lg)
+// ≤1200px
++media-breakpoint-up(xl)

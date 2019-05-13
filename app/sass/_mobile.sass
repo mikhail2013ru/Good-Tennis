@@ -1,0 +1,41 @@
+.m-menu-link
+	display: none
+	margin-top: 20px
+	font-size: 30px
+	color: $yellow
+	&:hover
+		color: $yellow
+		cursor: pointer
+.m-menu
+	padding: 0
+	margin: 0
+	position: fixed
+	right: 0
+	top: 0
+	height: 100vh
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	list-style: none
+	font-size: 3rem
+	line-height: 6rem
+	background-color: $black
+	z-index: 999
+	transition: 0.2s
+	transform: translateX(-100%)
+	.menu-link
+		color: $yellow
+
+.m-menu__active
+	transform: translateX(0%)
+	.close-menu
+		position: fixed
+		right: 6rem
+		top: 0
+		font-size: 5rem
+		font-weight: 900
+		color: $yellow
+		&:hover
+			cursor: pointer

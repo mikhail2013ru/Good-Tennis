@@ -1,0 +1,39 @@
+.header
+	padding: 20px 0
+	&-logo
+		vertical-align: middle
+	&-goodtennis
+		vertical-align: middle
+	&-list
+		list-style-type: none
+		position: relative
+		padding: 0
+		margin: 0
+		&:after
+			position: absolute
+			content: ''
+			height: 2px
+			width: 300px
+			margin-left: -150px
+			left: 50%
+			background: $yellow
+			border-radius: 100px/50px
+			top: 40px
+		&__item
+			display: inline-block
+			padding-right: 10px
+			&:last-child
+				padding-right: 0
+		a
+			font-family: $FuturaFuturisC
+			color: $yellow
+			font-style: italic
+			text-decoration: none
+			font-size: 23px
+			transition: 0.2s ease-out
+			&:hover, &:focus, &:active
+				color: $white
+				text-decoration: none
+				outline: none
+			&:active
+				color: #f86900
