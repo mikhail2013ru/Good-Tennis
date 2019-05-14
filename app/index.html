@@ -31,16 +31,24 @@
 <body>
 	<!-- navigation -->
 	<ul class="m-menu">
+		<li class="goodtennis">GOOD<br>TENNIS</li>
 		<li class="close-menu">&times;</li>
-		<li><a href="#" class="menu-link">Тренировки</a></li>
-		<li><a href="#" class="menu-link">Мы</a></li>
-		<li><a href="#" class="menu-link">Галерея</a></li>
-		<li><a href="#" class="menu-link">Где мы</a></li>
-		<li><a href="#" class="menu-link">Контакты</a></li>
+		<li class="m-menu__item-list"><a href="http://172.16.16.107:3000//#trains" class="menu-link">Тренировки</a></li>
+		<li class="m-menu__item-list"><a href="http://172.16.16.107:3000//#loc" class="menu-link">Где мы</a></li>
+		<li class="m-menu__item-list"><a href="http://172.16.16.107:3000//#instagram" class="menu-link">Галерея</a></li>
+		<li class="m-menu__item-list"><a href="http://172.16.16.107:3000//#train" class="menu-link">Тренера</a></li>
+		<li class="m-menu__item-list"><a href="http://172.16.16.107:3000//#contacts" class="menu-link">Контакты</a></li>
+		<li>
+			<ul class="m-menu-footer">
+				<li class="m-menu__item"><a href="https://www.Instagram.com/goodtennisteam" target="_blank" rel="noreferrer"><img src="img/m-menu/Instagram-logo.png" alt=""></a></li>
+				<li class="m-menu__item"><a href="https://vk.com/goodtennisteam" target="_blank" rel="noreferrer"><img src="img/m-menu/vk.png" alt=""></a></li>
+				<li class="m-menu__item"><a href="https://www.facebook.com/goodtennisteam" target="_blank" rel="noreferrer"><img src="img/m-menu/fb.png" alt=""></a></li>
+			</ul>
+		</li>
 	</ul>
 <header class="header">
 	<div class="container-fluid">
-		<div class="row align-items-center">
+		<div class="row no-gutters align-items-center">
 			<div class="col-lg-3 col-md-12 d-flex justify-content-center">
 				<div class="header-logo order-md-3">
 					<img src="img/menu/logo-left.png" alt="Номер телефона">
@@ -136,7 +144,7 @@
 			</div>
 		</div>
 		<button class="trains__button">
-			<a href="#">Где мы находимся?</a>
+			<a href="#loc" class="scrollThis">Где мы находимся?</a>
 		</button>
 			<img src="img/train/gt.png" class="trains-logo" alt="GT">
 	</div>
@@ -181,7 +189,7 @@
 
 <section class="slider">
 	<div class="container">
-		<div class="row">
+		<div class="row no-gutters">
 			<div class="col-md-12">
 				<div class="slider-sl">
 					<div class="slider-sl__slide">

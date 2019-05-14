@@ -2,7 +2,7 @@
 	display: none
 	margin-top: 20px
 	font-size: 30px
-	color: $yellow
+	color: $white
 	&:hover
 		color: $yellow
 		cursor: pointer
@@ -19,23 +19,53 @@
 	align-items: center
 	justify-content: center
 	list-style: none
-	font-size: 3rem
-	line-height: 6rem
-	background-color: $black
+	font-size: 30px
+	line-height: 1.2
+	background: rgb(2,0,36)
+	//background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)
+	//background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%)
+	//background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(13,13,152,1) 45%, rgba(0,212,255,1) 100%)
+	//background: linear-gradient(355deg, rgba(2,0,36,1) 0%, rgba(13,13,152,1) 64%, rgba(0,212,255,1) 100%)
+	background: linear-gradient(355deg, rgba(2,0,36,1) 0%, rgba(13,13,152,1) 99%, rgba(0,212,255,1) 100%)
 	z-index: 999
 	transition: 0.2s
 	transform: translateX(-100%)
+	&__item-list
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+	&-footer
+		padding-left: 0 
+	&__item
+		margin-top: 50px
+		display: inline-block
+		padding-right: 15px
+		&:last-child
+			padding-right: 0
+
 	.menu-link
-		color: $yellow
+		color: $white
+		font-family: $FuturaFuturisC
+		font-style: italic
+		font-size: 25px
 
 .m-menu__active
 	transform: translateX(0%)
 	.close-menu
 		position: fixed
-		right: 6rem
+		right: 15px
 		top: 0
-		font-size: 5rem
-		font-weight: 900
-		color: $yellow
+		font-size: 50px
+		font-weight: 300
+		color: $white
 		&:hover
 			cursor: pointer
+
+.goodtennis
+	margin-top: -14px
+	margin-bottom: 30px
+	text-align: center
+	font-family: $FuturaFuturisC-BoldItalic
+	color: $white
+	line-height: 1.2
+	font-size: 40px
